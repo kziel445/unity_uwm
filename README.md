@@ -8,7 +8,11 @@ unity_uwm
 		-Lab3 (here will be all files from Lab3)
 			-Prefabs
 			-Scenes
+				-Task2
+				-Task3
 			-Scripts
+				-Task2
+				-Task3
 		-Lab4
 			-Prefabs
 			-Scenes
