@@ -1,7 +1,8 @@
-# unity_uwm_gr_1
-Projektowanie gier w środowisku UNITY
+# Projektowanie gier w środowisku UNITY - uwm
+Kamil Zieliński 
+grupa 1
 
-# !!! Hierarchia plików z labolatoriów !!!
+# Hierarchia plików z labolatoriów
 ```bash
 unity_uwm
 ├───Assets
