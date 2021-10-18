@@ -2,7 +2,7 @@
 Projektowanie gier w środowisku UNITY
 
 # !!! Hierarchia plików z labolatoriów !!!
-
+```bash
 unity_uwm \
 	-Assets \
 		-Lab3 (here will be all files from Lab3) \
@@ -14,3 +14,4 @@ unity_uwm \
 			-Scenes \ 
 			-Scripts \ 
 		-[...]
+```
