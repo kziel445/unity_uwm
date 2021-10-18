@@ -1,5 +1,5 @@
 # Projektowanie gier w środowisku UNITY - uwm
-Kamil Zieliński 
+## Kamil Zieliński 
 grupa 1
 
 # Hierarchia plików z labolatoriów
