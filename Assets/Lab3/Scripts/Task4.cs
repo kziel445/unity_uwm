@@ -16,7 +16,9 @@ public class Task4 : MonoBehaviour
         var collidedWith = collision.gameObject;
         if(collidedWith.tag=="Obstacle")
         {
+            //on collision object change color to black
             collidedWith.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+            //message with what player collided
             Debug.Log("hit " + collision.gameObject.tag);
         }
     }
