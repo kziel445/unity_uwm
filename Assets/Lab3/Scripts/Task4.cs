@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class Task4 : MonoBehaviour
 {
-    public float speed = 2.0f;
+    [SerializeField] public float speed;
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        var collidedWith = collision.gameObject;
+        if(collidedWith.tag=="Obstacle")
+        {
+            collidedWith.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+            Debug.Log("hit " + collision.gameObject.tag);
+        }
+    }
     void FixedUpdate()
     {
         float mH = Input.GetAxis("Horizontal");
