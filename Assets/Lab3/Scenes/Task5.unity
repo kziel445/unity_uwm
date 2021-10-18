@@ -136,17 +136,17 @@ PrefabInstance:
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4464418857982675305, guid: 7551870ee7d197e459b16e109fbd8ae5,
         type: 3}
@@ -230,7 +230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 8983647116459016517, guid: 88483ba49abf96d44b858544e3d27176, type: 3}
-  spawnDelay: 1
+  cubeWidth: 1
+  spawnDelay: 0.25
   amount: 10
 --- !u!4 &710030337
 Transform:
