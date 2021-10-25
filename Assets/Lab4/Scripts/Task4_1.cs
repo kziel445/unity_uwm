@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Task1 : MonoBehaviour
+public class Task4_1 : MonoBehaviour
 {
     List<Vector3> positions = new List<Vector3>();
     public float delay = 3.0f;
