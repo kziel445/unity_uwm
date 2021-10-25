@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Task1 : MonoBehaviour
 {
@@ -45,10 +46,12 @@ public class Task1 : MonoBehaviour
 
     IEnumerator GenerujObiekt()
     {
+        
         Debug.Log("wywołano coroutine");
         foreach(Vector3 pos in positions)
-        {   
-            this.block.GetComponent<MeshRenderer>().material=materials[Enumerable.Range(0,4)];
+        {
+            //Random rnd = new Random();
+            this.block.GetComponent<MeshRenderer>().material=materials[Random.Range(0,5)];
             Instantiate(this.block, transform.localPosition + pos, Quaternion.identity);
             yield return new WaitForSeconds(this.delay);
         }
