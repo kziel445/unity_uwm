@@ -8,7 +8,7 @@ public class Task4_4_1MoveController : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private float playerSpeed = 10.0f;
-    private float jumpHeight = 1.0f;
+    public float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
     private void Start()
@@ -47,12 +47,16 @@ public class Task4_4_1MoveController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && groundedPlayer)
         {
             // wzór na siłę 
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            Jump(jumpHeight);
         }
 
         // prędkość swobodnego opadania zgodnie ze wzorem y = (1/2 * g) * t-kwadrat 
         // okazuje się, że jest to zbyt wolne opadanie, więc zastosowano g * t-kwadrat
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+    public void Jump(float jumpHeight)
+    {
+        playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
     }
 }

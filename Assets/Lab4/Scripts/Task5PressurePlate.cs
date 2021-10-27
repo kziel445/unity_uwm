@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Task5PressurePlate : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay(Collider collider)
     {
-
+        YeetFunction(collider);
     }
-    private void OnTriggerEnter(Collider objectToThrow)
+    private void YeetFunction(Collider collider)
     {
-        Debug.Log("Hop " + objectToThrow);
+        var objectToThrow = collider.GetComponent<Task4_4_1MoveController>();
+        objectToThrow.Jump(objectToThrow.jumpHeight * 3);
     }
 }
