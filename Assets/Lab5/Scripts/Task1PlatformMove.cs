@@ -13,6 +13,7 @@ public class Task1PlatformMove : MonoBehaviour
     private bool isRunningForward = true;
     private bool isRunningBackward = false;
     private Vector3 direction;
+    private Transform oldParent;
 
 
     void Start()
@@ -49,6 +50,8 @@ public class Task1PlatformMove : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player wszedł na windę.");
+            oldParent = other.gameObject.transform.parent;
+            Debug.Log(oldParent);
             other.gameObject.transform.parent = transform;
 
             if (transform.position.x >= finalPosition.x)
@@ -72,7 +75,7 @@ public class Task1PlatformMove : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player zszedł z windy.");
-            other.gameObject.transform.parent = null;
+            other.gameObject.transform.parent = oldParent;
         }
     }
 }
