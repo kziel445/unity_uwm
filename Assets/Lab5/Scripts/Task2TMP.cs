@@ -15,4 +15,9 @@ public class Task2TMP : MonoBehaviour
     {
         
     }
+    
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger");
+    }
 }
