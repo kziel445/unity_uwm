@@ -22,7 +22,7 @@ public class Task1PlatformMove : MonoBehaviour
         finalPosition = new Vector3(transform.position.x + xDistance,transform.position.y,transform.position.z + zDistance);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (isRunningForward && transform.position.x >= finalPosition.x)
         {
